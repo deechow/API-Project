@@ -1,0 +1,66 @@
+/* The default style of the body */
+body {
+  margin:25px;
+  font-family: Helvetica, Arial;
+  padding: 10px;
+  background-color: linen;
+}
+
+.box {
+  text-align: center;
+}
+
+.heading {
+  padding: 36px 0px;
+  text-align: center;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+}
+  
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: gainsboro;
+}
+  
+.topnav a {
+  float: left;
+  display: block;
+  color: ivory;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: linen;
+  color: gainsboro;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: mistyrose;
+  color: darkgrey;
+  margin-top: 20px;
+}
+  
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+  
+@media screen and (max-width: 400px) {
+  .topnav a {
+  float: none;
+  width: 100%;
+  }
+}

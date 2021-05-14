@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>API Project</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="header">
+      <h1>API Search Project</h1>
+      <p>deechow edition</p>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="topnav">
+      <a href="index.html" target="">Home</a>
+      <a href="pokemon.html" target="">Pokémon</a>
+      <a href="guildwars.html" target="">Guild Wars 2</a>
+    </div>
+
+    <!-- Subjest Title -->
+    <div class="box">
+      <br/>
+      <h2>Pokédex</h2>
+      <p>Search your pokémons!</p>
+    </div>
+
+    <!-- Pokémon Chart -->
+    <div class="container">
+      <table id="table" class="table table-striped table-hover">
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Sprite</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Cool Facts</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="box">
+      <!-- <input id="pokeSearch" type="text" size="40" value="" placeholder="Enter pokémon." /> -->
+      <input id="pokeSearch" type="text" value="" placeholder="Enter pokémon." />
+      <button onclick="searchPokemon()">Search</button>
+    </div>
+
+    <div class="box">
+      <p id="message"></p>
+    </div>
+
+    <div class="footer">
+      <h2>@deechow03</h2>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/pokemon.js"></script>
+  </body>
+</html>
